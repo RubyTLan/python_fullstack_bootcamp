@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <form style="border:2px black solid;margin:5% 43%;padding:20px;" action='/process' method='post'>
+
+
+        <div style="display:flex;justify-content: space-between;">
+            <label >Your Name:</label>
+            <input style='width:38%;' type='text' name='name'>
+        </div>
+
+
+        <div style="display:flex;justify-content: space-between;">
+            <label>Dojo Location:</label>
+            <select style='width:40%;' name='location'>
+                <option>San Jose</option>
+                <option>New York</option>
+                <option>Chicago</option>
+                <option>Seattle</option>
+            </select>
+        </div>
+
+
+        <div style="display:flex;justify-content: space-between;">
+            <label style="display:flex;justify-content: space-between;">Favorite Language:</label>
+            <select style='width:40%;' name="language">
+                <option>Python</option>
+                <option>JAVA</option>
+                <option>C++</option>
+                <option>Javascript</option>
+            </select>
+        </div>
+
+
+        <label>Comment(optional):</label><br>
+        <textarea style="width: 98%;"name="comment" rows="5" ></textarea><br>
+
+
+        <div style='display:flex;justify-content: flex-end;'>
+            <input  type='submit' value='submit info'>
+        </div>
+
+
+    </form>
+
+
+</body>
+</html>
